@@ -333,7 +333,7 @@ export async function GET(request: NextRequest) {
     console.log('Webhook verified successfully');
     return new NextResponse(challenge, { status: 200 });
   } else {
-    console.log('Webhook verification failed');
+    console.log('Webhook verification fail');
     return new NextResponse('Forbidden', { status: 403 });
   }
 }
